@@ -58,7 +58,7 @@ def generate_matrix_baseline(
     st.session_state['table'] = response_prep_02
 
 def generate_solutions_baseline():
-    genai.configure(api_key=API_KEY)
+    genai.configure(api_key='AIzaSyDiQBWIfHTto65mCYu0EUxPhlBlfVxBp-I')
 
     # Using `response_mime_type` with `response_schema` requires a Gemini 1.5 Pro model
     model = genai.GenerativeModel(
@@ -127,21 +127,22 @@ with st.sidebar:
 with st.container(border=True):
     solutions = st.session_state.solutions
 
-    header = clean_text(solutions.split('Problem:')[1].split("How it works:")[0].split("Solution:")[0])
-    #header = solutions
+    if "solutions" in st.session_state:
 
-    subheader = clean_text(solutions.split('Problem:')[1].split("How it works:")[0].split("Solution:")[1])
+        header = clean_text(solutions.split('Problem:')[1].split("How it works:")[0].split("Solution:")[0])
 
-    st.header("Problem: " + header, divider=True)
-    st.subheader("Solution: " + subheader, divider=True)
+        subheader = clean_text(solutions.split('Problem:')[1].split("How it works:")[0].split("Solution:")[1])
 
-    text = clean_text(solutions.split('Problem:')[1].split("How it works:")[1].split("- Reference 01:")[0])
-    st.write(text)
+        st.header("Problem: " + header, divider=True)
+        st.subheader("Solution: " + subheader, divider=True)
 
-    st.text("References:")
-
-    references = [i.strip() for i in clean_text(solutions.split('- Reference 01:')[1]).split('- ') if i!=""]
+        text = clean_text(solutions.split('Problem:')[1].split("How it works:")[1].split("- Reference 01:")[0])
+        st.write(text)
     
-    st.write(references[0])
-    st.write(references[1].replace("Reference 02:", ""))
-    st.write(references[2].replace("Reference 03:", ""))
+        st.text("References:")
+    
+        references = [i.strip() for i in clean_text(solutions.split('- Reference 01:')[1]).split('- ') if i!=""]
+        
+        st.write(references[0])
+        st.write(references[1].replace("Reference 02:", ""))
+        st.write(references[2].replace("Reference 03:", ""))
