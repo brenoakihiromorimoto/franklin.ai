@@ -127,7 +127,7 @@ with st.sidebar:
 with st.container(border=True):
     solutions = st.session_state.solutions
 
-    if "solutions" in st.session_state:
+    if "None" != st.session_state.solutions:
 
         header = clean_text(solutions.split('Problem:')[1].split("How it works:")[0].split("Solution:")[0])
 
@@ -138,11 +138,11 @@ with st.container(border=True):
 
         text = clean_text(solutions.split('Problem:')[1].split("How it works:")[1].split("- Reference 01:")[0])
         st.write(text)
-    
+
         st.text("References:")
-    
+
         references = [i.strip() for i in clean_text(solutions.split('- Reference 01:')[1]).split('- ') if i!=""]
-        
+
         st.write(references[0])
         st.write(references[1].replace("Reference 02:", ""))
         st.write(references[2].replace("Reference 03:", ""))
