@@ -33,7 +33,7 @@ def generate_matrix_baseline(
         industry="None"
         ):
     
-    genai.configure(api_key=API_KEY)
+    genai.configure(api_key='AIzaSyDiQBWIfHTto65mCYu0EUxPhlBlfVxBp-I')
 
     # Using `response_mime_type` with `response_schema` requires a Gemini 1.5 Pro model
     model = genai.GenerativeModel(
@@ -60,7 +60,7 @@ def generate_matrix_baseline(
 
 #Use 'st.session_state['table']' to generate suggestion of solution.
 def generate_solutions_baseline(problem="None"):
-    genai.configure(api_key=API_KEY)
+    genai.configure(api_key='AIzaSyDiQBWIfHTto65mCYu0EUxPhlBlfVxBp-I')
 
     # Using `response_mime_type` with `response_schema` requires a Gemini 1.5 Pro model
     model = genai.GenerativeModel(
@@ -131,13 +131,14 @@ with st.sidebar:
 
 with st.container(border=True):
     solutions = st.session_state.solutions
+    #First time user needs to receive instructions to use app.
     if "None" in st.session_state.solutions:
         st.header("Empowering innovation teams with rapid idea generation for breakthrough solutions.", divider=True)
         st.subheader("Instructions:")
         st.text("you need to fill:")
         st.text("1: research areas related to the product.")
         st.text("2: industry is related to your product.")
-        st.text("3: context (theme/problem/constraints) to generate great suggestions.")
+        st.text("3: the main problem")
 
     if "None" != st.session_state.solutions:
 
