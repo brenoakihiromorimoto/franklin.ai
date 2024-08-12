@@ -16,14 +16,14 @@ https://franklin.streamlit.app/
 No
 
 ## Give Judges Access to Your Code!
-[If your code is public, please add your GitHub link below. Otherwise, upload a zip file to Google Drive, set the sharing to 'Anyone with the link,' and share the link below.]
+https://github.com/brenoakihiromorimoto/franklin.ai/tree/main
 
 ## Testing Instructions
-1. Log in or sign up using your email.
-2. Select your industry and specific challenge areas.
-3. Input key parameters like target audience, desired outcome, and constraints.
-4. Generate ideas and explore suggestions provided by the app.
-5. Use the feedback feature to refine the ideas and narrow down actionable solutions.
+1. Access on your Desktop.
+2. Select your industry and specific research areas associated with product.
+3. Input your main problem.
+4. Click on button "Generate a new solution"
+5. If you didn't like the output, press F5 to not overload streamlit server.
 
 ## Country of Residence
 Brazil
