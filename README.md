@@ -7,7 +7,7 @@ Empowering innovation teams with rapid idea generation for breakthrough solution
 Franklin.ai is designed to accelerate innovation by providing fast, AI-driven ideas to product teams in large enterprises, deep-tech startups, and entrepreneurs in the ideation phase. Leveraging the Gemini API, Franklin.ai analyzes various input parameters to generate creative, viable solutions tailored to specific industries and challenges. It serves as a catalyst for innovation, helping teams overcome roadblocks and explore new possibilities quickly and efficiently. The app supports the brainstorming process by suggesting actionable ideas that align with strategic goals, allowing teams to focus on refining and implementing these ideas into successful products.
 
 ## YouTube URL
-[Add a link to your public video]
+https://youtu.be/m2p7NMerhiI
 
 ## Website or Web App URL
 https://franklin.streamlit.app/
