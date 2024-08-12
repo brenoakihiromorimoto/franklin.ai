@@ -76,7 +76,7 @@ def generate_solutions_baseline(problem="None"):
     Template of output:
     Problem: {problem}
     Solution: [Title]
-    How it works: [explain your morphological analysis. Minimum 300 words to Maximum 700 words]
+    How it works: [explain your morphological analysis. Maximum 200 words]
     References: [Get 3 references from Web to explain how it works. Maximum 10 words. Remove any link]
     - Reference 01:
     - Reference 02:
