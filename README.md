@@ -10,7 +10,7 @@ Franklin.ai is designed to accelerate innovation by providing fast, AI-driven id
 [Add a link to your public video]
 
 ## Website or Web App URL
-[If your app is live, please share the URL]
+https://franklin.streamlit.app/
 
 ## Is it a Game App?
 No
