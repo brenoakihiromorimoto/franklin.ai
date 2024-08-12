@@ -33,7 +33,7 @@ def generate_matrix_baseline(
         industry="None"
         ):
     
-    genai.configure(api_key='AIzaSyDiQBWIfHTto65mCYu0EUxPhlBlfVxBp-I')
+    genai.configure(api_key=API_KEY)
 
     # Using `response_mime_type` with `response_schema` requires a Gemini 1.5 Pro model
     model = genai.GenerativeModel(
@@ -60,7 +60,7 @@ def generate_matrix_baseline(
 
 #Use 'st.session_state['table']' to generate suggestion of solution.
 def generate_solutions_baseline(problem="None"):
-    genai.configure(api_key='AIzaSyDiQBWIfHTto65mCYu0EUxPhlBlfVxBp-I')
+    genai.configure(api_key=API_KEY)
 
     # Using `response_mime_type` with `response_schema` requires a Gemini 1.5 Pro model
     model = genai.GenerativeModel(
